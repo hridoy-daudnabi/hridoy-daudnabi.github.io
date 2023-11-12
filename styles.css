@@ -63,36 +63,8 @@ nav ul li a.active, nav ul li a:hover {
     color: white;
     background-color: #333;
     padding: 10px 20px;
+    text-decoration: none;
     border-radius: 5px;
-}
-
-/* Section Styles */
-section {
-    padding: 40px;
-    text-align: center;
-}
-
-.container {
-    max-width: 800px;
-    margin: auto;
-}
-
-.biography {
-    margin-bottom: 20px;
-}
-
-.details .column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-/* Clearfix for columns */
-.details::after {
-    content: "";
-    clear: both;
-    display: table;
 }
 
 /* Footer Styles */
@@ -108,7 +80,12 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .details .column {
-        width: 100%;
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .hero-text p {
+        font-size: 1.5em;
     }
 }
