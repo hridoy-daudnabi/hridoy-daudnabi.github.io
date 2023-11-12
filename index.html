@@ -1,42 +1,136 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>Your Academic Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0066cc 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            margin: 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .about, .cv, .publications, .projects {
+            padding: 15px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Daud Nabi Hridoy's Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#publications">Publications</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Your</span> Academic Profile</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#about">About Me</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>About</h2>
-            <p>This is the about section where you can introduce yourself or your organization.</p>
-        </section>
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                This is a brief section about yourself. Include your interests, professional background, and any other relevant information that you would like visitors to know about you.
+            </p>
+        </div>
+    </section>
 
-        <section id="news">
-            <h2>News</h2>
-            <p>Here you can post the latest news related to your work or field.</p>
-        </section>
+    <section class="cv" id="cv">
+        <div class="container">
+            <h2>Curriculum Vitae</h2>
+            <p>
+                This section could include a brief overview of your CV and a link to download the full document.
+            </p>
+            <a href="path_to_your_cv.pdf" target="_blank">Download My CV</a>
+        </div>
+    </section>
 
-        <section id="publications">
+    <section class="publications" id="publications">
+        <div class="container">
             <h2>Publications</h2>
-            <p>List your publications or any relevant work here.</p>
-        </section>
-    </main>
+            <ul>
+                <!-- List your publications here -->
+                <li>Publication Title, Journal, Year</li>
+                <li>Publication Title, Journal, Year</li>
+                <!-- Add more as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <p>
+                Showcase your projects here. Provide a brief description and link to the project if it's hosted online or to its repository.
+            </p>
+        </div>
+    </section>
 
     <footer>
-        <p>Copyright &copy; Your Name or Company Name</p>
+        <p>Connect with me on social media</p>
+        <a href="https://twitter.com/yourhandle">Twitter</a> | 
+        <a href="https://linkedin.com/in/yourhandle">LinkedIn</a> | 
+        <a href="https://github.com/yourhandle">GitHub</a>
     </footer>
 </body>
 </html>
