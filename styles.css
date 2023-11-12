@@ -89,3 +89,74 @@ footer {
         font-size: 1.5em;
     }
 }
+
+/* ... existing styles ... */
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 10px 0;
+}
+
+.name-title {
+    margin-left: 20px;
+    color: white;
+    font-size: 1.5em;
+}
+
+/* About Me Page Styles */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+}
+
+.profile-title {
+    text-align: left;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.biography, .academic-info {
+    width: 48%; /* Adjust the width as needed */
+    text-align: left;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .name-title {
+        margin-bottom: 10px;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .biography, .academic-info {
+        width: 100%;
+    }
+}
+
+
