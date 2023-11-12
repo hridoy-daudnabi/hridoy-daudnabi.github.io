@@ -1,0 +1,98 @@
+/* Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container for content */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header and navigation styles */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #0066cc 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header ul {
+    list-style: none;
+    text-align: center;
+}
+
+header ul li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header ul li a:hover, header ul li a.current {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+/* Main content sections */
+section {
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Styling for individual sections */
+#about, #cv, #publications, #projects, #contact {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Links color */
+a {
+    color: #333;
+}
+
+a:hover {
+    color: #0066cc;
+}
+
+/* Utility classes for padding and text alignment */
+.padding {
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Responsive behavior */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
