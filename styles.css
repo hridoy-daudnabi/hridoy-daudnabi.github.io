@@ -108,56 +108,77 @@ footer {
 }
 
 
-/* About Me Page Styles */
-.profile {
+/* About Page Specific Styles */
+.about-container {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.profile-info {
+    flex-basis: 30%; /* Adjust width as necessary */
+    text-align: center; /* Center the content */
+    padding-right: 20px; /* Add some spacing */
+}
+
+.profile-photo {
+    width: 80%; /* Adjust width as necessary */
+    border-radius: 50%; /* Circular photo */
     margin-bottom: 20px;
 }
 
-.profile-image {
-    border-radius: 50%;
-    margin-right: 20px;
-    width: 150px; /* Adjust size as needed */
-    height: auto;
+.cv-button {
+    display: block; /* Make the link a block to occupy its own line */
+    margin: 10px auto; /* Center the button */
+    padding: 10px 20px;
+    background-color: #333; /* Match the navbar color */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Make text bold */
 }
 
-.profile-title {
-    text-align: left;
+.about-details {
+    flex-basis: 65%; /* Adjust width as necessary */
+    text-align: left; /* Align text to the left */
 }
 
-.about-content {
-    display: flex;
-    justify-content: space-between;
+.about-details h2, .about-details h3 {
+    margin-top: 20px;
 }
 
-.biography, .academic-info {
-    width: 48%; /* Adjust the width as needed */
-    text-align: left;
+.about-details ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+}
+
+.about-details ul li::before {
+    content: "• "; /* Add bullet before each list item */
+    color: #333; /* Bullet color */
+    font-weight: bold; /* Make bullets bold */
+    display: inline-block; /* Needed to add content before the list item */
+    width: 1em; /* Space for the bullet */
+    margin-left: -1em; /* Align bullets properly */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .navbar {
+    .about-container {
         flex-direction: column;
     }
 
-    .name-title {
-        margin-bottom: 10px;
+    .profile-info, .about-details {
+        flex-basis: 100%;
     }
 
-    .profile {
-        flex-direction: column;
-        align-items: flex-start;
+    .profile-photo {
+        width: 50%; /* Adjust size for small devices */
+        margin: 0 auto 20px; /* Center the image */
     }
 
-    .about-content {
-        flex-direction: column;
-    }
-
-    .biography, .academic-info {
-        width: 100%;
+    .cv-button {
+        margin-bottom: 20px;
     }
 }
 
-
+/* ... existing styles ... */
