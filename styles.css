@@ -180,5 +180,44 @@ footer {
         margin-bottom: 20px;
     }
 }
+/* Publications and Projects Grid Styles */
+.articles-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.article-item, .project-item {
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.article-image, .project-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+}
+
+.article-info h2, .project-info h2 {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.authors {
+    font-style: italic;
+    color: #555;
+}
+
+.details-button {
+    display: inline-block;
+    margin-top: 10px;
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
 
 /* ... existing styles ... */
