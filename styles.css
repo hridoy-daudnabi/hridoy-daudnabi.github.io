@@ -181,43 +181,37 @@ footer {
     }
 }
 /* Publications and Projects Grid Styles */
-.articles-grid, .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+.publications-list {
+    list-style-type: none; /* Removes default list styling */
+    counter-reset: publication-number; /* Creates a new instance of the counter */
+    padding-left: 0; /* Removes default padding */
 }
 
-.article-item, .project-item {
-    background: #fff;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.publications-list li {
+    counter-increment: publication-number; /* Increment the counter */
+    margin-bottom: 15px; /* Space between items */
 }
 
-.article-image, .project-image {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #eee;
+.publications-list li::before {
+    content: counter(publication-number) ". "; /* Display the counter */
+    font-weight: bold; /* Make the number bold */
 }
 
-.article-info h2, .project-info h2 {
-    font-size: 1em;
-    margin: 10px 0;
+.publication-title {
+    text-decoration: none; /* Removes underline from links */
+    color: blue; /* Color of the title */
+    cursor: pointer; /* Changes cursor to indicate clickable */
+}
+
+.publication-title:hover {
+    text-decoration: underline; /* Underline on hover for interactivity */
 }
 
 .authors {
-    font-style: italic;
-    color: #555;
+    font-style: italic; /* Italics for authors */
 }
 
-.details-button {
-    display: inline-block;
-    margin-top: 10px;
-    background: #333;
-    color: white;
-    padding: 5px 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+.publication-details {
+    display: block; /* Display on a new line */
+    font-size: smaller; /* Smaller font size for publication details */
 }
-
-/* ... existing styles ... */
