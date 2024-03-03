@@ -231,7 +231,7 @@ footer {
     font-size: smaller; /* Smaller font size for publication details */
 }
 footer {
-  position: flex;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
