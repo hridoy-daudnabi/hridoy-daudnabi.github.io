@@ -47,10 +47,7 @@ nav ul li a.active, nav ul li a:hover {
     background-position: center;
     height: 100vh;
     position: relative;
-    min-height:calc(100% - 60px);
-    display: flex;
-    aling-items: center;
-    justify-content: center;
+    
 }
 
 .hero-text {
