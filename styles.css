@@ -42,11 +42,15 @@ nav ul li a.active, nav ul li a:hover {
 
 /* Hero Image Styles */
 .hero-image {
-    background-image: url('images/nasa-Yj1M5riCKk4-unsplash.jpg');
+    background-image: url('nasa-yZygONrUBe8-unsplash.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
     position: relative;
+    min-height:calc(100% - 60px);
+    display: flex;
+    aling-items: center;
+    justify-content: center;
 }
 
 .hero-text {
