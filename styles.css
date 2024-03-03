@@ -215,3 +215,10 @@ footer {
     display: block; /* Display on a new line */
     font-size: smaller; /* Smaller font size for publication details */
 }
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
