@@ -59,7 +59,7 @@ nav ul li a.active, nav ul li a:hover {
     font-size: 4em;
     font-weight:400;
     color: white;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     text-align: center;
     color: black;
     text-transform: uppercase;
@@ -231,7 +231,7 @@ footer {
     font-size: smaller; /* Smaller font size for publication details */
 }
 footer {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
