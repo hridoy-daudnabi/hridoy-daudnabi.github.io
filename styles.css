@@ -155,7 +155,7 @@ footer {
 
 .about-details {
     flex-basis: 65%; /* Adjust width as necessary */
-    text-align: justify; /* Align text to the left */
+    text-align: left; /* Align text to the left */
 }
 
 .about-details h2, .about-details h3 {
