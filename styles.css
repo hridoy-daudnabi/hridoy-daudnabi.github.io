@@ -4,7 +4,11 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
     padding: 0;
     text-decoration: none;
 }
-
+body, html  {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 /* Basic Styles */
 body {
     font-family: Arial, sans-serif;
@@ -216,9 +220,11 @@ footer {
     font-size: smaller; /* Smaller font size for publication details */
 }
 footer {
-  position: absolute;
+  position: fixed;
+  left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
-  margin-top: 40px;
+  padding: 10px 0;
+  /*margin-top: 40px*/;
 }
