@@ -59,7 +59,7 @@ nav ul li a.active, nav ul li a:hover {
 .hero-text p {
     font-size: 4em;
     font-weight:500;
-    color: green;
+    color: white;
     margin-bottom: 60px;
     text-align: center;
     color: green;
@@ -71,8 +71,8 @@ nav ul li a.active, nav ul li a:hover {
 .hero-text a {
     font-size: 1.5em;
     background-color: transparent;
-    color: black;
-    border: 3px solid black;
+    color: white;
+    border: 3px solid white;
     border-radius: 25px;
     padding: 12px 24px;
     display: inline-block;
