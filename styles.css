@@ -57,12 +57,12 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 .hero-text p {
+    font-family: 'Courier New', monospace;
     font-size: 4em;
     font-weight:500;
     color: white;
     margin-bottom: 60px;
     text-align: center;
-    color: green;
     text-transform: uppercase;
     letter-spacing: 2px;
    
