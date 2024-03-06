@@ -28,6 +28,7 @@ nav ul li {
 }
 
 nav ul li a {
+    font-family: monospace;
     color: white;
     font-weight: bold;
 }
