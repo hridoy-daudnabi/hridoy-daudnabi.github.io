@@ -254,9 +254,16 @@ footer a {
 footer a:hover {
     text-decoration: underline; /* Adds underline on hover for better accessibility */
 }
-.coming-soon p {
+.project-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.project-content h2 {
     color: #006400; /* Dark green color */
-    text-align: center; /* Center align the text */
-    font-size: 24px; /* Example font size */
-    margin-top: 50px; /* Adds some space from the top */
+}
+
+.project-content p {
+    font-size: 18px;
+    color: #006400; /* Dark green color for "Coming soon..." */
 }
