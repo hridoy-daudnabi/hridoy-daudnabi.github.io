@@ -267,3 +267,9 @@ footer a:hover {
     font-size: 18px;
     color: #006400; /* Dark green color for "Coming soon..." */
 }
+.coming-soon p {
+    color: #006400; /* Dark green color */
+    text-align: center; /* Center align the text */
+    font-size: 24px; /* Example font size */
+    margin-top: 50px; /* Adds some space from the top */
+}
