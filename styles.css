@@ -65,6 +65,8 @@ nav ul li a.active, nav ul li a:hover {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
+    top: -20px;
+    
    
 }
 
