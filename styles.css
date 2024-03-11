@@ -73,8 +73,8 @@ nav ul li a.active, nav ul li a:hover {
 .hero-text a {
     font-size: 1.5em;
     background-color: transparent;
-    color: #33ff00;
-    border: 3px solid #33ff00;
+    color: white;
+    border: 3px solid white;
     border-radius: 25px;
     padding: 12px 24px;
     display: inline-block;
