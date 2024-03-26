@@ -60,7 +60,7 @@ nav ul li a.active, nav ul li a:hover {
     font-family: 'Courier New', monospace;
     font-size: 4em;
     font-weight: bold;
-    color: #00ffff;
+    color: #ffd700;
     margin-bottom: 120px;
     text-align: center;
     text-transform: uppercase;
@@ -70,9 +70,9 @@ nav ul li a.active, nav ul li a:hover {
 .hero-text a {
     font-size: 1.5em;
     background-color: transparent;
-    color: #ffd700;
+    color: ##00ffff;
     font-weight: bold;
-    border: 3px solid #ffd700;
+    border: 3px solid ##00ffff;
     border-radius: 25px;
     padding: 12px 24px;
     display: inline-block;
