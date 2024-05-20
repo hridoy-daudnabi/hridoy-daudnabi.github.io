@@ -248,41 +248,47 @@ footer a:hover {
 }
 
 .project-content {
-    border: 1px solid #ccc;
-    padding: 1em;
-    margin-bottom: 1em;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
-.project-content img {
-    max-width: 20%;
-    height: auto;
-    float: left;
-    margin-right: 1em;
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.project-content h2 {
+.project-item h2 {
     font-size: 1.5em;
+    margin-bottom: 0.5em;
 }
 
-.project-content p {
+.project-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5em;
+}
+
+.project-item p {
     margin: 1em 0;
 }
 
-.project-content button {
+.project-item button {
     padding: 0.5em 1em;
     background-color: #007bff;
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 4px;
 }
 
-.project-content button a {
+.project-item button a {
     color: #fff;
     text-decoration: none;
 }
 
-.project-content button:hover {
+.project-item button:hover {
     background-color: #0056b3;
 }
 
