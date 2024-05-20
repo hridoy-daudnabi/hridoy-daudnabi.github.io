@@ -254,22 +254,35 @@ footer a {
 footer a:hover {
     text-decoration: underline; /* Adds underline on hover for better accessibility */
 }
-.project-content {
-    text-align: center;
-    padding: 20px;
-}
-
-.project-content h2 {
-    color: #006400; /* Dark green color */
-}
-
-.project-content p {
-    font-size: 18px;
-    color: #006400; /* Dark green color for "Coming soon..." */
-}
-.coming-soon p {
-    color: #006400; /* Dark green color */
-    text-align: center; /* Center align the text */
-    font-size: 24px; /* Example font size */
-    margin-top: 50px; /* Adds some space from the top */
-}
+#projects {
+            padding: 2em;
+        }
+        .project-content {
+            border: 1px solid #ccc;
+            padding: 1em;
+            margin-bottom: 1em;
+        }
+        .project-content img {
+            max-width: 100%;
+            height: auto;
+        }
+        .project-content h2 {
+            font-size: 1.5em;
+        }
+        .project-content p {
+            margin: 1em 0;
+        }
+        .project-content button {
+            padding: 0.5em 1em;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .project-content button a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .project-content button:hover {
+            background-color: #0056b3;
+        }
