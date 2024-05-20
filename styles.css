@@ -8,6 +8,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
 /* Basic Styles */
 body {
     font-family: 'Courier New', monospace;
+    margin-bottom: 60px; /* Add a bottom margin to prevent footer overlap */
 }
 
 /* Header Styles */
@@ -87,9 +88,8 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    position: static; /* Remove fixed position */
 }
 
 footer p {
