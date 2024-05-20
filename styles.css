@@ -255,8 +255,8 @@ footer a:hover {
 
 .project-item {
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
+    gap: 1em;
 }
 
 .project-item h2 {
@@ -265,9 +265,9 @@ footer a:hover {
 }
 
 .project-item img {
-    max-width: 20%;
+    max-width: 150px; /* Adjust the width as needed */
     height: auto;
-    margin-bottom: 0.5em;
+    margin-right: 1em;
 }
 
 .project-item p {
