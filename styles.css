@@ -265,7 +265,7 @@ footer a:hover {
 }
 
 .project-item img {
-    max-width: 50px; /* Adjust the width as needed */
+    max-width: 20px; /* Adjust the width as needed */
     height: auto;
     margin-right: 1em;
 }
