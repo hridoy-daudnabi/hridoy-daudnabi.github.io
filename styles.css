@@ -45,6 +45,8 @@ nav ul li a.active, nav ul li a:hover {
     background-position: center;
     height: 100vh;
     position: relative;
+    color: white; /* Default text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for better readability */
 }
 
 .hero-text {
@@ -53,36 +55,40 @@ nav ul li a.active, nav ul li a:hover {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    width: 80%; /* Adjust width for better positioning */
 }
 
 .hero-text p {
     font-family: 'Courier New', monospace;
     font-size: 4em;
     font-weight: bold;
-    color: #ffd700;
-    margin-bottom: 120px;
-    text-align: center;
+    color: #fff; /* White text color */
+    margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for better readability */
 }
 
 .hero-text a {
     font-size: 1.5em;
-    background-color: transparent;
-    color: #00ffff;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    color: #00ffff; /* Cyan text color */
     font-weight: bold;
     border: 3px solid #00ffff;
     border-radius: 25px;
     padding: 12px 24px;
-    display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s ease;
 }
 
-/* Footer Styles */
+.hero-text a:hover {
+    background-color: #00ffff; /* Cyan background on hover */
+    color: #000; /* Black text color on hover */
+}
+
+/* Additional Footer Styles */
 footer {
     background: #333;
     color: white;
