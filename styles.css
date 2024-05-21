@@ -251,13 +251,13 @@ footer a:hover {
 .project-item {
     display: flex;
     align-items: flex-start;
-    gap: 1em;
+    gap: 2em; /* Adjusted for better spacing */
     margin-bottom: 2em;
 }
 
 .project-item img {
-    max-width: 200px; /* Adjust the width as needed */
-    height: auto;
+    width: 200px; /* Adjust the width to a reasonable size */
+    height: auto; /* Maintain the aspect ratio */
 }
 
 .project-description {
@@ -274,7 +274,7 @@ footer a:hover {
 }
 
 .project-description button {
-    padding: 0.3em 0.5em; /* Smaller padding */
+    padding: 0.5em 1em; /* Adjust padding for better appearance */
     background-color: #007bff; /* Blue background */
     color: #fff; /* White text */
     border: none;
@@ -291,6 +291,7 @@ footer a:hover {
 .project-description button:hover {
     background-color: #0056b3;
 }
+
 /* PDF Viewer Styles */
 #pdf-viewer {
     display: none;
