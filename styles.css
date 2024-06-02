@@ -250,41 +250,20 @@ footer a:hover {
 }
 
 /* Projects Section Styles */
-/* Projects Section Styles */
 #projects {
-    padding: 80px 20px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.container {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2em;
 }
 
 .project-item {
     display: flex;
     align-items: flex-start;
-    gap: 2em;
+    gap: 2em; /* Adjusted for better spacing */
     margin-bottom: 2em;
-    border-radius: 8px;
-    background: #f9f9f9;
-    padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.project-image {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.project-item img {
+    width: 300px; /* Adjust the width to a reasonable size */
+    height: auto; /* Maintain the aspect ratio */
 }
 
 .project-description {
@@ -294,23 +273,25 @@ footer a:hover {
 .project-description h2 {
     font-size: 1.5em;
     margin-bottom: 0.5em;
-    color: #333;
 }
 
 .project-description p {
     margin: 1em 0;
-    line-height: 1.6;
 }
 
 .project-description button {
-    padding: 0.5em 1em;
-    background-color: #007bff;
-    color: #fff;
+    padding: 0.5em 1em; /* Adjust padding for better appearance */
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    font-size: 0.9em;
-    transition: background-color 0.3s ease;
+    font-size: 0.9em; /* Smaller font size */
+}
+
+.project-description button a {
+    color: #fff; /* White text */
+    text-decoration: none;
 }
 
 .project-description button:hover {
@@ -321,85 +302,12 @@ footer a:hover {
 #pdf-viewer {
     display: none;
     padding: 2em;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 #pdf-frame {
-    width: 80%;
-    height: 80%;
-    border: none;
-}
-
-.close-button {
-    padding: 0.5em 1em;
-    background-color: #ff0000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 1em;
-    margin-top: 1em;
-}
-
-.close-button:hover {
-    background-color: #cc0000;
-}
-
-/* Footer Styles */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    font-size: 0.9em;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .project-item {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .project-description h2 {
-        font-size: 1.2em;
-    }
-
-    .project-image {
-        width: 100%;
-    }
-
-    #pdf-frame {
-        width: 100%;
-        height: 70%;
-    }
+    height: 500px;
+    border: none;
 }
 
 
