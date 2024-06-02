@@ -250,7 +250,6 @@ footer a:hover {
 }
 
 /* Projects Section Styles */
-/* Projects Section Styles */
 #projects {
     padding: 80px 20px 20px;
     max-width: 1200px;
@@ -340,19 +339,24 @@ footer a:hover {
     border: none;
 }
 
-.close-button {
+.pdf-buttons {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.close-button, .fullscreen-button {
     padding: 0.5em 1em;
-    background-color: #ff0000;
+    background-color: #007bff;
     color: #fff;
     border: none;
     cursor: pointer;
     border-radius: 4px;
     font-size: 1em;
-    margin-top: 1em;
 }
 
-.close-button:hover {
-    background-color: #cc0000;
+.close-button:hover, .fullscreen-button:hover {
+    background-color: #0056b3;
 }
 
 /* Footer Styles */
@@ -401,3 +405,4 @@ footer a:hover {
         height: 70%;
     }
 }
+
