@@ -250,43 +250,60 @@ footer a:hover {
 }
 
 /* Projects Section Styles */
-#projects {
-    padding: 2em;
+.projects-section {
+    padding: 3em 1em;
+    background-color: #f4f4f4; /* Light grey background for contrast */
 }
 
 .project-item {
     display: flex;
-    align-items: flex-start;
-    gap: 2em; /* Adjusted for better spacing */
+    flex-direction: column; /* Stack items vertically for better mobile compatibility */
+    align-items: center;
+    background: white; /* White background for each project card */
+    padding: 1.5em;
     margin-bottom: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.project-item:hover {
+    transform: translateY(-5px); /* Lift up on hover */
 }
 
 .project-item img {
-    width: 300px; /* Adjust the width to a reasonable size */
-    height: auto; /* Maintain the aspect ratio */
+    width: 100%; /* Full width for better responsive design */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+    margin-bottom: 1em;
 }
 
 .project-description {
-    flex-grow: 1;
+    text-align: center; /* Center text for better readability */
 }
 
 .project-description h2 {
-    font-size: 1.5em;
+    font-size: 1.8em; /* Slightly larger font for headings */
+    color: #333; /* Dark grey color */
     margin-bottom: 0.5em;
 }
 
 .project-description p {
-    margin: 1em 0;
+    font-size: 1em; /* Standard font size */
+    color: #666; /* Medium grey color */
+    margin-bottom: 1.5em; /* Space below paragraph */
+    line-height: 1.6; /* Improved readability */
 }
 
 .project-description button {
-    padding: 0.5em 1em; /* Adjust padding for better appearance */
+    padding: 0.75em 1.5em; /* Balanced padding */
     background-color: #007bff; /* Blue background */
     color: #fff; /* White text */
     border: none;
     cursor: pointer;
-    border-radius: 4px;
-    font-size: 0.9em; /* Smaller font size */
+    border-radius: 25px; /* Pill-shaped button */
+    font-size: 1em; /* Standard font size */
+    transition: background-color 0.3s ease; /* Smooth color transition */
 }
 
 .project-description button a {
@@ -295,19 +312,6 @@ footer a:hover {
 }
 
 .project-description button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue on hover */
 }
-
-/* PDF Viewer Styles */
-#pdf-viewer {
-    display: none;
-    padding: 2em;
-}
-
-#pdf-frame {
-    width: 100%;
-    height: 500px;
-    border: none;
-}
-
 
