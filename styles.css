@@ -272,7 +272,7 @@ footer a:hover {
 }
 
 .project-item img {
-    width: 100%; /* Full width for better responsive design */
+    width: 200px; /* Set the desired width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px 8px 0 0; /* Rounded top corners */
     margin-bottom: 1em;
@@ -314,4 +314,5 @@ footer a:hover {
 .project-description button:hover {
     background-color: #0056b3; /* Darker blue on hover */
 }
+
 
