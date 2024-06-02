@@ -339,24 +339,19 @@ footer a:hover {
     border: none;
 }
 
-.pdf-buttons {
-    display: flex;
-    gap: 1em;
-    margin-top: 1em;
-}
-
-.close-button, .fullscreen-button {
+.close-button {
     padding: 0.5em 1em;
-    background-color: #007bff;
+    background-color: #ff0000;
     color: #fff;
     border: none;
     cursor: pointer;
     border-radius: 4px;
     font-size: 1em;
+    margin-top: 1em;
 }
 
-.close-button:hover, .fullscreen-button:hover {
-    background-color: #0056b3;
+.close-button:hover {
+    background-color: #cc0000;
 }
 
 /* Footer Styles */
@@ -405,4 +400,5 @@ footer a:hover {
         height: 70%;
     }
 }
+
 
