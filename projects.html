@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Daud Nabi Hridoy</title>
+    <title>Projects - Daud Nabi Hridoy</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,27 +20,29 @@
             </nav>
         </div>
     </header>
-<section id="Projects">
-    <div class="project-item">
-        <img src="images/noise contour.jpg" alt="Project Snapshot">
-        <div class="project-description">
-            <h2>Noise Analysis of BCB Airport</h2>
-            <p>Final group project for CEE 5614 (Air Transportation Systems) course at Virginia Tech. We looked at the noise contour (DNL) of BCB airport. Also, we looked at the impacted area and population exposure for different noise levels.</p>
-            <button><a href="FInal MiniProject_Hridoy_Rovira.pdf" target="_blank">Details</a></button>
+<section id="projects">
+    <div class="container">
+        <div class="project-item">
+            <img src="images/noise contour.jpg" alt="Project Snapshot" class="project-image">
+            <div class="project-description">
+                <h2>Noise Analysis of BCB Airport</h2>
+                <p>Final group project for CEE 5614 (Air Transportation Systems) course at Virginia Tech. We looked at the noise contour (DNL) of BCB airport. Also, we looked at the impacted area and population exposure for different noise levels.</p>
+                <button onclick="showPDF('FInal MiniProject_Hridoy_Rovira.pdf')">Details</button>
+            </div>
         </div>
-    </div>
-    <div class="project-item">
-        <img src="images/movement.png" alt="Project Snapshot">
-        <div class="project-description">
-            <h2>Identifying the Naturalistic Crossing Behaviors of Pedestrians</h2>
-            <p>Final individual project for CEE 5604 (Traffic Flow and Characteristics) course at Virginia Tech. It's an observational study to understand the naturalistic crossing behaviors of pedestrians. Also, a model is estimated to support the observations.</p>
-            <button><a href="Final Paper_Daud Nabi Hridoy.pdf" target="_blank">Details</a></button>
+        <div class="project-item">
+            <img src="images/movement.png" alt="Project Snapshot" class="project-image">
+            <div class="project-description">
+                <h2>Identifying the Naturalistic Crossing Behaviors of Pedestrians</h2>
+                <p>Final individual project for CEE 5604 (Traffic Flow and Characteristics) course at Virginia Tech. It's an observational study to understand the naturalistic crossing behaviors of pedestrians. Also, a model is estimated to support the observations.</p>
+                <button onclick="showPDF('Final Paper_Daud Nabi Hridoy.pdf')">Details</button>
+            </div>
         </div>
     </div>
 </section>
 <section id="pdf-viewer" style="display: none; padding: 2em;">
-        <iframe id="pdf-frame" src="" style="width: 100%; height: 500px; border: none;"></iframe>
-        <button onclick="hidePDF()">Close</button>
+    <iframe id="pdf-frame" src="" style="width: 100%; height: 500px; border: none;"></iframe>
+    <button class="close-button" onclick="hidePDF()">Close</button>
 </section>
     <footer>
         <p>&copy; 2024 Daud Nabi Hridoy</p>
@@ -56,6 +58,5 @@
             document.getElementById('pdf-frame').src = '';
         }
     </script>
-    
 </body>
 </html>
