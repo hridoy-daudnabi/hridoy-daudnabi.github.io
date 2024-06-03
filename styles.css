@@ -279,7 +279,7 @@ footer a:hover {
 }
 
 .project-description {
-    text-align: center; /* Center text for better readability */
+    text-align: left; /* Center text for better readability */
 }
 
 .project-description h2 {
