@@ -213,41 +213,64 @@ footer a:hover {
     }
 }
 
-/* Publications and Projects Grid Styles */
-.publications-list {
-    list-style-type: none;
-    counter-reset: publication-number;
-    padding-left: 0;
+/* Publications Section Styles */
+#publications {
+    padding: 3em 1em;
+    background-color: #f4f4f4; /* Light grey background for contrast */
 }
 
-.publications-list li {
-    counter-increment: publication-number;
-    margin-bottom: 15px;
+.publication-item {
+    display: flex;
+    flex-direction: column; /* Stack items vertically for better mobile compatibility */
+    align-items: flex-start;
+    background: white; /* White background for each publication card */
+    padding: 1.5em;
+    margin-bottom: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
-.publications-list li::before {
-    content: counter(publication-number) ". ";
-    font-weight: bold;
+.publication-item:hover {
+    transform: translateY(-5px); /* Lift up on hover */
 }
 
-.publication-title {
+.publication-item p.authors {
+    font-style: italic;
+    margin-bottom: 0.5em;
+    color: #666; /* Medium grey color */
+}
+
+.publication-item a.publication-title {
+    font-size: 1.2em;
+    color: #007bff; /* Blue text color */
     text-decoration: none;
-    color: blue;
-    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 0.5em;
 }
 
-.publication-title:hover {
+.publication-item a.publication-title:hover {
     text-decoration: underline;
 }
 
-.authors {
-    font-style: italic;
+.publication-item span.publication-details {
+    font-size: 0.9em;
+    color: #999; /* Light grey color */
 }
 
-.publication-details {
-    display: block;
-    font-size: smaller;
+/* General container styling */
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
 
 /* Projects Section Styles */
 .projects-section {
